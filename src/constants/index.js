@@ -15,7 +15,6 @@ import {
   git,
   figma,
   docker,
-  meta,
   starbucks,
   tesla,
   shopify,
@@ -46,7 +45,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Web Designer",
     icon: mobile,
   },
   {
@@ -54,7 +53,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Software Testing",
     icon: creator,
   },
 ];
@@ -116,11 +115,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Software Developer",
+    company_name: "Sandfield",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "November 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -129,11 +128,11 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Software Tester",
+    company_name: "OPPO",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "November 2022 - Feb 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -142,30 +141,36 @@ const experiences = [
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Private Tutor",
+    company_name: "MyTuition",
+    icon: shopify,
+    iconBg: "#383E56",
+    date: "Oct 2021 - Oct 2022",
+    points: [
+      "Tutored students on maths and physics from years ranging from intermediate to high school level",
+      "Tested students using personalized diagnostic tests, where weak areas were supported.",
+      "Planned lessons for allotted time to strengthen weak subjects and build skills.",
+      "Weekly to bi-weekly lessons to help students prepare for their tests",
+    ],
+  },
+  {
+    title: "DEVS Education Exec",
+    company_name: "Developers Society UOA",
     icon: shopify,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Education team focuses on guiding fellow students and members on their journeys towards a successful career",
+      "Many events such as industry nights and CV workshops etc to create content around applying for job opportunities",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    title: "Chef LOL",
+    company_name: "Beached as Fish'n'Chips",
+    icon: shopify,
+    iconBg: "#383E56",
+    date: "Jan 2022 - Jan 2023",
+    points: ["Flipped some burgers", "Fried some fries"],
   },
 ];
 
@@ -198,20 +203,20 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "AI Automated Message Mapping",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "AI project to automate message standard mappings, dataset generation from pulling from SQL server written in C# and EFCore then trained OpenAI Base model using pulled data. Integrated into Crossfire",
     tags: [
       {
-        name: "react",
+        name: ".NET8",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "SQL Server",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "OpenAI",
         color: "pink-text-gradient",
       },
     ],
@@ -219,46 +224,64 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Quick Draw",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Family friendly drawing game based off of Google's Quick draw. Designed to stir up the artistic skills of teenages as well as keep them entertained through a variety of unique gamemodes including Standard, Blitz, Zen and Hidden mode. Coded in Java and styled using CSS",
     tags: [
       {
-        name: "react",
+        name: "Java",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "CSS",
         color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
       },
     ],
     image: jobit,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Android Tech shopping app",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
-        name: "nextjs",
+        name: "Android Studio",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Java",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "FireBase",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/UOASOFTENG306/project-1-team-9",
+  },
+  {
+    name: "Multi Threading Scheduler",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "Java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaFX Scenebuilder",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link:
+      "https://github.com/UOASOFTENG306/project-2-project-2-team-6",
   },
 ];
 

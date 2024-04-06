@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Feedbacks = () => {
-  return (
-    <div>Feedbacks</div>
-  )
-}
+  return <div>Lets try import my 3d model from ready player one here</div>;
+};
 
-export default Feedbacks
+export default Feedbacks;

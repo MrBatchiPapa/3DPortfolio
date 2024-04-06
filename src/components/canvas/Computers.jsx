@@ -7,24 +7,44 @@ import CanvasLoader from "../Loader";
 // Creating 3js component
 const Computers = ({ isMobile }) => {
   // Importing downloaded PC model
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  //const computer = useGLTF("./desktop_pc/scene.gltf");
+  //const computer = useGLTF("./porche/scene.gltf");
+  const computer = useGLTF("./mustang/scene.gltf");
   return (
     <mesh>
-      <hemisphereLight intensity={1.5} groundColor="black" />
+      <hemisphereLight intensity={2} groundColor="black" />
       <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
+        position={[0, 5, 0]}
+        angle={Math.PI / 3}
         penumbra={1}
-        intensity={1}
+        decay={2}
+        distance={0}
         castShadow
-        shadow-mapSize={1024}
+        intensity={250}
       />
-      <pointLight intensity={1} />
+      <spotLight
+        position={[0, 0, 5]}
+        angle={Math.PI / 1}
+        penumbra={1}
+        decay={2}
+        distance={0}
+        castShadow
+        intensity={100}
+      />
+      <spotLight
+        position={[0, 0, -5]}
+        angle={Math.PI / 1}
+        penumbra={1}
+        decay={2}
+        distance={0}
+        castShadow
+        intensity={100}
+      />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.65 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        scale={isMobile ? 0.75 : 1.3}
+        position={isMobile ? [0, -1, 0] : [0, -1.25, 0]}
+        rotation={[0, 0, 0]}
       />
     </mesh>
   );
@@ -50,7 +70,7 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [5, 5, 5], fov: 35 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
@@ -58,7 +78,8 @@ const ComputersCanvas = () => {
           enableZoom={false}
           enablePan={false}
           maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 3}
+          autoRotate
         />
         <Computers isMobile={isMobile} />
       </Suspense>
