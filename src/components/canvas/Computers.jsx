@@ -77,7 +77,7 @@ const ComputersCanvas = () => {
           enablePan={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 3}
-          autoRotate //this thing lowkey kills the gpu bruh
+          //autoRotate //this thing lowkey kills the gpu bruh
         />
         <Computers isMobile={isMobile} />
       </Suspense>

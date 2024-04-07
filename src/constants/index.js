@@ -192,7 +192,7 @@ const projects = [
   {
     name: "Quick Draw",
     description:
-      "Family friendly drawing game based off of Google's Quick draw. Designed to stir up the artistic skills of teenages as well as keep them entertained through a variety of unique gamemodes including Standard, Blitz, Zen and Hidden mode. Coded in Java and styled using CSS",
+      "Family friendly drawing game based off of Google's Quick draw. Designed to stir up the artistic skills of teenagers as well as keep them entertained through a variety of unique gamemodes including Standard, Blitz, Zen and Hidden mode. Coded in Java and styled using CSS",
     tags: [
       {
         name: "Java",
