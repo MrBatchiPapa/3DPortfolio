@@ -4,9 +4,9 @@ const config = {
   theme: {
     extend: {
       colors: {
-        primary: "#1D4463",
-        secondary: "#aaa6c3",
-        tertiary: "#151030",
+        primary: "white",
+        secondary: "#5A5A5A",
+        tertiary: "#7D8995",
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",

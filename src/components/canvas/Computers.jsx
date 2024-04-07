@@ -7,8 +7,6 @@ import CanvasLoader from "../Loader";
 // Creating 3js component
 const Computers = ({ isMobile }) => {
   // Importing downloaded PC model
-  //const computer = useGLTF("./desktop_pc/scene.gltf");
-  //const computer = useGLTF("./porche/scene.gltf");
   const computer = useGLTF("./mustang/scene.gltf");
   return (
     <mesh>
@@ -79,7 +77,7 @@ const ComputersCanvas = () => {
           enablePan={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 3}
-          autoRotate
+          autoRotate //this thing lowkey kills the gpu bruh
         />
         <Computers isMobile={isMobile} />
       </Suspense>

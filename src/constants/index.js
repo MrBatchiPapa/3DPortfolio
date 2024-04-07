@@ -8,19 +8,21 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
-  nodejs,
-  mongodb,
   git,
   figma,
-  docker,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  java,
+  firebase,
+  cs,
+  python,
+  sandfield,
+  oppo,
+  mytuition,
+  devs,
+  omato,
+  quickDraw,
+  scheduler,
+  ai,
   threejs,
 } from "../assets";
 
@@ -60,6 +62,22 @@ const services = [
 
 const technologies = [
   {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: ".NET",
+    icon: cs,
+  },
+  {
+    name: "FireBase",
+    icon: firebase,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
     name: "HTML 5",
     icon: html,
   },
@@ -80,20 +98,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
   },
   {
     name: "Three JS",
@@ -107,43 +113,38 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
     title: "Software Developer",
     company_name: "Sandfield",
-    icon: starbucks,
+    icon: sandfield,
     iconBg: "#383E56",
     date: "November 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "AI project to automate message standard mappings, dataset generation in C# and EFcore, trained OpenAI Base model",
+      "Worked on tickets, including debugging and development in C#, VB and JS as well as creating and modifying stored procedures",
       "Participating in code reviews and providing constructive feedback to other developers.",
+      "Wrote many SQL queries to manipulate database as well as automate tasks",
     ],
   },
   {
     title: "Software Tester",
     company_name: "OPPO",
-    icon: tesla,
+    icon: oppo,
     iconBg: "#E6DEDD",
     date: "November 2022 - Feb 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Use VPN to download unreleased android software directly from head office in China to test on a variety of OPPO phones",
+      "Ran automation python test scripts, log readers and manual cases to test capability of software on OPPO phones",
+      "Wrote simple test and automation scripts in Android Debugging Bridge",
     ],
   },
   {
     title: "Private Tutor",
     company_name: "MyTuition",
-    icon: shopify,
+    icon: mytuition,
     iconBg: "#383E56",
     date: "Oct 2021 - Oct 2022",
     points: [
@@ -156,48 +157,13 @@ const experiences = [
   {
     title: "DEVS Education Exec",
     company_name: "Developers Society UOA",
-    icon: shopify,
+    icon: devs,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "November 2023 - Present",
     points: [
       "Education team focuses on guiding fellow students and members on their journeys towards a successful career",
       "Many events such as industry nights and CV workshops etc to create content around applying for job opportunities",
     ],
-  },
-  {
-    title: "Chef LOL",
-    company_name: "Beached as Fish'n'Chips",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: ["Flipped some burgers", "Fried some fries"],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
@@ -220,7 +186,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: ai,
     source_code_link: "https://github.com/",
   },
   {
@@ -237,7 +203,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: jobit,
+    image: quickDraw,
     source_code_link: "https://github.com/",
   },
   {
@@ -258,7 +224,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: omato,
     source_code_link: "https://github.com/UOASOFTENG306/project-1-team-9",
   },
   {
@@ -279,10 +245,10 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: scheduler,
     source_code_link:
       "https://github.com/UOASOFTENG306/project-2-project-2-team-6",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
