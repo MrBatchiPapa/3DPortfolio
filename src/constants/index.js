@@ -209,7 +209,7 @@ const projects = [
   {
     name: "Android Tech shopping app",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Android app that acts as a one shop stop for electronic accessories. Shopping app that allows users to browse, add to cart and purchase items. Utilizes FireBase for user authentication and storage of user data. Coded in Java and using Android Studio",
     tags: [
       {
         name: "Android Studio",
@@ -230,7 +230,7 @@ const projects = [
   {
     name: "Multi Threading Scheduler",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Branch and bound algorithm that completes a given scheduling problem optimally for small input node graphs. Two modes, standard and then parallelized mode to use multiple processors to speed up search.",
     tags: [
       {
         name: "Java",
