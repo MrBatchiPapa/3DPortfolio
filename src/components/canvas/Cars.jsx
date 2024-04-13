@@ -5,9 +5,9 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 // Creating 3js component
-const Computers = ({ isMobile }) => {
+const Cars = ({ isMobile }) => {
   // Importing downloaded PC model
-  const computer = useGLTF("./mustang/scene.gltf");
+  const car = useGLTF("./mustang/scene.gltf");
   return (
     <mesh>
       <hemisphereLight intensity={2} groundColor="black" />
@@ -39,7 +39,7 @@ const Computers = ({ isMobile }) => {
         intensity={100}
       />
       <primitive
-        object={computer.scene}
+        object={car.scene}
         scale={isMobile ? 0.75 : 1.3}
         position={isMobile ? [0, -1, 0] : [0, -1.25, 0]}
         rotation={[0, 0, 0]}
@@ -48,7 +48,7 @@ const Computers = ({ isMobile }) => {
   );
 };
 
-const ComputersCanvas = () => {
+const CarCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -77,12 +77,12 @@ const ComputersCanvas = () => {
           enablePan={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 3}
-          //autoRotate //this thing lowkey kills the gpu bruh
+          autoRotate //this thing lowkey kills the gpu bruh
         />
-        <Computers isMobile={isMobile} />
+        <Cars isMobile={isMobile} />
       </Suspense>
       <Preload all />
     </Canvas>
   );
 };
-export default ComputersCanvas;
+export default CarCanvas;
