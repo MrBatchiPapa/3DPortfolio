@@ -1,5 +1,5 @@
 import { Html, useProgress } from "@react-three/drei";
-
+// Custom loader for loading icon while loading the model
 const Loader = () => {
   const { progress } = useProgress();
   return (

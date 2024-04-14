@@ -19,3 +19,5 @@ const styles = {
 };
 
 export { styles };
+
+//Easy access of styles

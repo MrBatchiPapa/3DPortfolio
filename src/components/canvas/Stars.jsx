@@ -3,9 +3,11 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm"; //for the stars
 
+// Stars component responsible for rendering stars in the 3D scene
 const Stars = (props) => {
   const ref = useRef();
   const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 });
+  // Using useFrame to update the rotation of the stars over time
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 15;
     ref.current.rotation.y -= delta / 10;
@@ -25,6 +27,7 @@ const Stars = (props) => {
   );
 };
 
+//Canvas to display stars
 const StarsCanvas = () => {
   return (
     <group rotation={[0, 0, Math.PI / 4]}>

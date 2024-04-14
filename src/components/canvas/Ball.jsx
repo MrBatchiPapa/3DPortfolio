@@ -11,7 +11,9 @@ import {
 } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
+//Floating balls object
 const Ball = (props) => {
+  //Image to be used on floating ball
   const [decal] = useTexture([props.imgUrl]);
   return (
     <Float speed={1.75} rotationIntensity={1}>
@@ -25,6 +27,7 @@ const Ball = (props) => {
           polygonOffsetFactor={-5}
           flatShading
         />
+        {/* Decal to texture ball with image, rotation and position set so texture faces us by default */}
         <Decal
           position={[0, 0, 1]}
           rotation={[2 * Math.PI, 0, 6.25]}
@@ -35,13 +38,11 @@ const Ball = (props) => {
   );
 };
 
+//Canvas to display balls
 const BallCanvas = ({ icon }) => {
   return (
-    <Canvas
-      frameloop="demand"
-      //shadows
-      gl={{ preserveDrawingBuffer: true }}
-    >
+    // Smoother Drawing
+    <Canvas frameloop="demand" shadows gl={{ preserveDrawingBuffer: true }}>
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} enablePan={false} />
         <Ball imgUrl={icon} />

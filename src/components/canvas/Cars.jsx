@@ -11,15 +11,8 @@ const Cars = ({ isMobile }) => {
   return (
     <mesh>
       <hemisphereLight intensity={2} groundColor="black" />
-      <spotLight
-        position={[0, 5, 0]}
-        angle={Math.PI / 3}
-        penumbra={1}
-        decay={2}
-        distance={0}
-        castShadow
-        intensity={250}
-      />
+      {/* Setting three lights around the model for better visibility around all angles */}
+      <spotLight position={[0, 5, 0]} angle={Math.PI} intensity={250} />
       <spotLight
         position={[0, 0, 5]}
         angle={Math.PI / 1}
@@ -49,6 +42,7 @@ const Cars = ({ isMobile }) => {
 };
 
 const CarCanvas = () => {
+  // Resize responsive
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -66,18 +60,19 @@ const CarCanvas = () => {
 
   return (
     <Canvas
-      frameloop="demand"
+      frameloop="demand" //Only runs rendering loop when necessary
       shadows
       camera={{ position: [5, 5, 5], fov: 35 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
+          // Dont allow users to zoom into or drag the object around, allow users to rotate about y axis and a bit of x axis
           enableZoom={false}
           enablePan={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 3}
-          autoRotate //this thing lowkey kills the gpu bruh
+          autoRotate //Autorotate uses a lot of GPU, can be disabled if lagging
         />
         <Cars isMobile={isMobile} />
       </Suspense>
