@@ -72,7 +72,7 @@ const CarCanvas = () => {
           enablePan={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 3}
-          autoRotate //Autorotate uses a lot of GPU, can be disabled if lagging
+          //autoRotate //Autorotate uses a lot of GPU, can be disabled if lagging
         />
         <Cars isMobile={isMobile} />
       </Suspense>
