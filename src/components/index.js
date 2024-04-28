@@ -20,3 +20,5 @@ export {
   CarCanvas,
   StarsCanvas,
 };
+
+//Easier access of all components
